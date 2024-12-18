@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kanban</title>
+</head>
+<body>
+    <main class="kanban">
+        <!-- COLUMN 1 -->
+        <div class="kanban-column" data-id="1">
+            <div class="kanban-title">
+                <h2>
+                    Ideias
+                </h2>
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge tarefas">
+                        <span>
+                            
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Implementar funcionalidade de busca de tarefas.
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment"></i>
+                                1
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-paperclip"></i>
+                                1
+                            </p>
+                        </div>
+
+                        <div class="user">
+                            <img src="src/images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="kanban-card" draggable="true">
+                    <div class="badge tarefas">
+                        <span>
+                            
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Adicionar opção para configurar prioridades personalizadas.
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment"></i>
+                                1
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-paperclip"></i>
+                                1
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="kanban-column" data-id="2">
+            <div class="kanban-title">
+                <h2>
+                    Lista de tarefas
+                </h2>
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge tarefas">
+                        <span>
+                            
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Implementar o evento de clique para criar novas tarefas.
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment"></i>
+                                1
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-paperclip"></i>
+                                1
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="kanban-card" draggable="true">
+                    <div class="badge tarefas">
+                        <span>
+                            
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Melhorar a estrutura do código para facilitar a manutenção e novas implementações.
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment"></i>
+                                1
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-paperclip"></i>
+                                1
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="kanban-card" draggable="true">
+                    <div class="badge tarefas">
+                        <span>
+                            
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Implementar funcionalidade de comentários e anexos.
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment"></i>
+                                1
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-paperclip"></i>
+                                1
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="kanban-column" data-id="3">
+            <div class="kanban-title">
+                <h2>
+                    Em andamento
+                </h2>
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                
+            </div>
+
+        </div>     
+        
+        <!-- COLUMN 4 -->
+        <div class="kanban-column" data-id="4">
+            <div class="kanban-title">
+                <h2>
+                    Testando
+                </h2>
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge high">
+                        <span>
+                            Alta prioridade
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Garantir que as tarefas estão sendo movidas corretamente entre as colunas e que as posições estão sendo mantidas.
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment"></i>
+                                1
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-paperclip"></i>
+                                1
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>   
+        
+        <!-- COLUMN 5 -->
+        <div class="kanban-column" data-id="5">
+            <div class="kanban-title">
+                <h2>
+                    Concluído
+                </h2>
+                <button class="add-card" draggable="true">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge concluido">
+                        <span>
+                            
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        O design já está bonito, mas agora ele deve ser adaptado para diferentes tamanhos de tela.
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment"></i>
+                                1
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-paperclip"></i>
+                                1
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="kanban-card" draggable="true">
+                    <div class="badge concluido">
+                        <span>
+                            
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Finalizar a funcionalidade de arrastar e soltar entre colunas.
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment"></i>
+                                1
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-paperclip"></i>
+                                1
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="kanban-card" draggable="true">
+                    <div class="badge concluido">
+                        <span>
+                            
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Melhorar a aparência dos botões e suas animações para torná-los mais intuitivos.
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment"></i>
+                                1
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-paperclip"></i>
+                                1
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>        
+    </main>
+    <script src="src/javascript/script.js"></script>    
+</body>
+</html>
